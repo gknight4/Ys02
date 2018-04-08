@@ -1,0 +1,22 @@
+<b:beans xmlns="http://www.springframework.org/schema/security"
+		 xmlns:b="http://www.springframework.org/schema/beans"
+		 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		 xsi:schemaLocation="http://www.springframework.org/schema/beans 
+			http://www.springframework.org/schema/beans/spring-beans.xsd
+			http://www.springframework.org/schema/security 
+			http://www.springframework.org/schema/security/spring-security.xsd">
+
+            <http pattern="/*" security="none"/>
+<!--           <http pattern="/api/usercheck/*" security="none"/> -->
+
+
+<!--   	<authentication-manager>
+	  <authentication-provider>
+	    <jdbc-user-service data-source-ref="dataSource"
+	      users-by-username-query=
+	        "select username,password, enabled from user where username=?"
+	        />
+	  </authentication-provider>
+	</authentication-manager> -->	
+
+</b:beans>
